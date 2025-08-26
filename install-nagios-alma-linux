@@ -1,1 +1,11 @@
+Create Alma Linux VM
+##########################################
+VM Configuration
+  /usr - lvm - 100GB
+  /opt  - lvm  - 100GB
+OS - Minimal install with development toos and legacy support
+############################################
+SELinux and Firewalld configuration
+
+
 
