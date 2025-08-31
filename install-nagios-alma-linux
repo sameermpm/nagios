@@ -46,6 +46,16 @@ make install-groups-users
 make install-config
 make install-webconf
 make install-exfoliation
+htpasswd -c /usr/local/nagios/etc/htpasswd.users nagiosadmin
+
+dnf install -y gcc glibc glibc-common make gettext automake autoconf wget openssl-devel net-snmp net-snmp-utils epel-release perl-Net-SNMP
+wget https://github.com/nagios-plugins/nagios-plugins/releases/download/release-2.4.12/nagios-plugins-2.4.12.tar.gz
+tar -zxvf nagios-pl..........
+cd nagios-plug...
+./configure --with-nagios-user=nagios --with-nagios-group=nagios
+make
+make install
+
 
 
 
